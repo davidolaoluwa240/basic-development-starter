@@ -1,0 +1,109 @@
+// COLOR
+@each $name, $value in $colors {
+  .is-text-#{$name} {
+    color: $value;
+  }
+}
+
+// BACKGROUND
+@each $name, $value in $colors {
+  .bg-#{$name} {
+    background-color: $value;
+  }
+}
+
+// WEIGHT
+@each $name, $value in $weights {
+  .is-text-#{$name} {
+    font-weight: $value;
+  }
+}
+
+// FONT SIZE
+@each $name, $value in $font-sizes {
+  .is-text-#{$name} {
+    font-size: $value;
+  }
+}
+
+// HEADING FONT SIZE
+@each $name, $value in $heading-font-sizes {
+  .is-#{$name} {
+    font-size: $value;
+  }
+}
+
+// SPACING:
+// TOP
+@each $name, $value in $spacing-y {
+  .is-mt-#{$name} {
+    margin-top: $value;
+  }
+}
+// BOTTOM
+@each $name, $value in $spacing-y {
+  .is-mb-#{$name} {
+    margin-bottom: $value;
+  }
+}
+// RIGHT
+@each $name, $value in $spacing-x {
+  .is-mr-#{$name} {
+    margin-right: $value;
+  }
+}
+// LEFT
+@each $name, $value in $spacing-x {
+  .is-ml-#{$name} {
+    margin-left: $value;
+  }
+}
+// RIGHT, LEFT
+@each $name, $value in $spacing-x {
+  .is-mx-#{$name} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+}
+// TOP, BOTTOM
+@each $name, $value in $spacing-y {
+  .is-my-#{$name} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+}
+
+// TEXT ALIGNMENT
+.is-text-center {
+  text-align: center;
+}
+
+.is-text-right {
+  text-align: right;
+}
+
+.is-text-left {
+  text-align: left;
+}
+
+.is-text-justify {
+  text-align: justify;
+}
+
+// HIDE
+.d-none {
+  display: none;
+}
+
+.visibility-hidden {
+  visibility: hidden;
+}
+
+// SHOW
+.d-block {
+  display: block;
+}
+
+.visibility-visible {
+  visibility: visible;
+}
