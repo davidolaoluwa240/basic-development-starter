@@ -33,40 +33,35 @@
   }
 }
 
-// SPACING:
-// TOP
-@each $name, $value in $spacing-y {
+// SPACING
+@each $name, $value in $spacing {
+  // TOP
   .is-mt-#{$name} {
     margin-top: $value;
   }
-}
-// BOTTOM
-@each $name, $value in $spacing-y {
+
+  // BOTTOM
   .is-mb-#{$name} {
     margin-bottom: $value;
   }
-}
-// RIGHT
-@each $name, $value in $spacing-x {
+
+  // RIGHT
   .is-mr-#{$name} {
     margin-right: $value;
   }
-}
-// LEFT
-@each $name, $value in $spacing-x {
+
+  // LEFT
   .is-ml-#{$name} {
     margin-left: $value;
   }
-}
-// RIGHT, LEFT
-@each $name, $value in $spacing-x {
+
+  // RIGHT, LEFT
   .is-mx-#{$name} {
     margin-left: $value;
     margin-right: $value;
   }
-}
-// TOP, BOTTOM
-@each $name, $value in $spacing-y {
+
+  // TOP, BOTTOM
   .is-my-#{$name} {
     margin-top: $value;
     margin-bottom: $value;
@@ -106,4 +101,28 @@
 
 .visibility-visible {
   visibility: visible;
+}
+
+// TEXT TRANSFORMER
+.is-upper {
+  text-transform: uppercase;
+}
+
+.is-lower {
+  text-transform: lowercase;
+}
+
+.is-capitalize {
+  text-transform: capitalize;
+}
+
+.is-text-italic {
+  font-style: italic;
+}
+
+// LAYOUT
+.container {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
 }

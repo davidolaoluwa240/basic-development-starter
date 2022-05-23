@@ -8,6 +8,11 @@
   @return map-get($map: $weights, $key: $weight-name);
 }
 
+// GET FONT FAMILY
+@function getFontFamily($font-family-name) {
+  @return map-get($map: $font-family, $key: $font-family-name);
+}
+
 // GET BASE FONTS
 @function getBaseFont($name) {
   @return map-get($map: $base-fonts, $key: $name);
@@ -29,10 +34,6 @@
 }
 
 // GET SPACING
-@function getSpacing($spacing, $position: x) {
-  @if ($position == x) {
-    @return map-get($map: $spacing-x, $key: $spacing);
-  } @else {
-    @return map-get($map: $spacing-y, $key: $spacing);
-  }
+@function getSpacing($spacing) {
+  @return map-get($map: $spacing, $key: $spacing);
 }

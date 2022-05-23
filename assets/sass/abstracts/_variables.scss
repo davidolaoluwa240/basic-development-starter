@@ -2,6 +2,9 @@ $colors: (
   "primary-color": #000000,
   "secondary-color": #000000,
   "tertiary-color": #000000,
+
+  "light": #ffffff,
+  "dark": #000000,
 );
 
 $weights: (
@@ -14,13 +17,6 @@ $weights: (
   "bolder": 900,
 );
 
-$base-fonts: (
-  "default-font-size": 1.6rem,
-  "default-font-family": sans-serif,
-  "default-line-height": 1,
-  "default-font-weight": 400,
-);
-
 $font-sizes: (
   "extra-small": 1.3rem,
   "small": 1.4rem,
@@ -28,6 +24,25 @@ $font-sizes: (
   "extra-medium": 1.6rem,
   "large": 1.8rem,
   "extra-large": 2.2rem,
+);
+
+$font-family: (
+  "font-family-normal": (
+    "Rubik",
+    sans-serif,
+  ),
+  "font-family-thick": (
+    "Playfair Display",
+    serif,
+  ),
+);
+
+$base-fonts: (
+  "default-font-size": 1.6rem,
+  "default-font-family": getFontFamily("font-family-normal"),
+  "default-line-height": 1,
+  "default-font-weight": 400,
+  "color": getColor("dark"),
 );
 
 $heading-font-sizes: (
@@ -48,18 +63,11 @@ $button-sizes: (
   "extra-large": 6rem 6rem,
 );
 
-$spacing-x: (
+$spacing: (
   "extra-small": 2rem,
   "small": 2rem,
   "medium": 2rem,
-  "large": 2rem,
-  "extra-large": 2rem,
-);
-
-$spacing-y: (
-  "extra-small": 2rem,
-  "small": 2rem,
-  "medium": 2rem,
+  "extra-medium": 2rem,
   "large": 2rem,
   "extra-large": 2rem,
 );
